@@ -1,0 +1,17 @@
+version: '3.4'
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: locust_pie
+    environment:
+      - APPLICATION_PORT=3310
+      - DATABASE_URL=mongodb://vision:divineOrUnicornAdmin#871@ds249025.mlab.com:49025/plato
+      - DATABASE_SSL=false
+      - FOREST_AUTH_SECRET=44ddc89eebe68fef987f7501759270097679e4d3b7cc99644791348eceed6e8db930711d5dae2da2e0196fb591567299
+      - FOREST_ENV_SECRET=65813b8d8b001cd084d95e69ba37870f9f6397552c5689ed7820867af7a4af95
+    ports:
+      - "3310:3310"
+    volumes:
+      - ./:/usr/src/app
