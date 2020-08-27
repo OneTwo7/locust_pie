@@ -321,9 +321,9 @@
   "meta": {
     "database_type": "MongoDB",
     "liana": "forest-express-mongoose",
-    "liana_version": "6.3.2",
+    "liana_version": "6.3.5",
     "engine": "nodejs",
-    "engine_version": "12.10.0",
+    "engine_version": "14.2.0",
     "framework": "express",
     "framework_version": "~4.16.3",
     "orm_version": "5.8.13"
